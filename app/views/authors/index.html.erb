@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+
+
+ 
+  <% @authors.each do |author| %>
+      
+    <strong><%= author.first_name %> <%= author.last_name %></strong>
+    <p>- <%= author.gender %></p>
+    <p class="author-link"><%= link_to 'Books', author %> </p>
+  <% end %>
+
+<br>
+

@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+
+<h3>Review</h3>
+
+  <div>
+    <strong><%= @review.reviewer %>    |    <%= @review.stars %> Stars</strong>
+    <br />
+    <p><%= @review.body %></p>
+  </div>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back to Book', @book %>

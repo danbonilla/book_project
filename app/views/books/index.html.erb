@@ -1,0 +1,44 @@
+
+
+
+  
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <h2><%= link_to 'ebooks', books_path %></h2>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6" id="search-box">
+            <%= form_tag(books_path, :method => "get", id: "search-for") do %>
+              <%= text_field_tag :book_name, params[:search], placeholder: "Seach Books" %>
+              <%= submit_tag "Search", class: "search-button", :name => nil %>
+            <% end %>
+          </div>
+
+          <div class="col-md-6" id="search-box">
+            <%= form_tag(books_path, :method => "get", id: "search-for") do %>
+              <%= text_field_tag :author_name, params[:search], placeholder: "Seach Author" %>
+              <%= submit_tag "Search", class: "search-button" %>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="row">
+          <% @books.each do |book| %>
+          <div class="col-md-3" id="books">
+            <h4 class="book-title"><%= book.title %></h4>
+            <p class="book-category">Category: <%= book.category %></p>
+            <p class="book-link">  <%= link_to 'Read more', book %></p>
+          </div>
+          <% end %>
+          <% unless @books.present? %>
+            <p>There is no book.</p>
+          <% end %>
+
+        </div>
+    </div>    
+    

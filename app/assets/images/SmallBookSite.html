@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:3000/books/15 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>SmallBookSite</title>
+  <link rel="stylesheet" media="all" href="./SmallBookSite_files/application.self-67e146202473abfb9c3814f123e681e54ce1a750232bdf39f2cbf5f743ebbbad.css" data-turbolinks-track="true">
+  <script src="./SmallBookSite_files/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/util.self-259befb5ba307350f3ed40e4ff1d27e6268e407ee0da02fd46435784459fc746.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/alert.self-44483afe785e8334f25977de4cc25db3b8ca7ef953e60d2eeda2deeeccfda56e.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/button.self-9a46ecb8ace47b217ba3ee88c7a8c7572b0ef75e77fff1b4e32ddf00af7fefe4.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/carousel.self-8e572923c87f450d7f38176167d96a27913dac0771100278265523b97f2bb074.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/collapse.self-4f8619d8d3fb252be59e65ef55b5a91dee275861b5d729c7e64f55091266984e.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/dropdown.self-77fbc8160624d6515b5d55fa40e7e7ba8f4ebe526b6007fe5a6bbc4437b46a1e.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/modal.self-83fa21d21f8b68b3389ce5018b81be0ad967d65f1e08e3acd0d5c804e31e64a7.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/scrollspy.self-7474c149d14b6006919c68e8dd36423c169ef1c15b54a701b82e3931831fa434.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/tab.self-7249bd863668fd4b877386598154c53466a77a853ae4d9ee2c45476fa3a361eb.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/tooltip.self-ff495cd6932165d4adceb3a8baec7340536f4d26b2fa14cd202e651ccc7f513a.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/popover.self-1b1efcd196ba075b0e9b7962c2a7631c8d7bcc7010e0140ad2c071cb0594a1d9.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js" data-turbolinks-track="true"></script>
+<script src="./SmallBookSite_files/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js" data-turbolinks-track="true"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="5iVz09+tGRC7akt2ZbhNieTTGiDscZ5O4QKLptDtYIHOw7vyX2YR/fe5hcpQCneM2zs4QHtiWsX7NyNiktnPZg==">
+</head>
+<body>
+
+
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+
+    <title>Book</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./SmallBookSite_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./SmallBookSite_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./SmallBookSite_files/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./SmallBookSite_files/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  <p id="notice"></p>
+  
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <h2><a href="http://localhost:3000/books">ebooks</a></h2>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <!-- Example row of columns -->
+
+      <div class="book-info">
+        <h2 class="book-title">Epic Story</h2>
+        <strong>Avg Rating: 2.77777777777778   |   Category: Fiction</strong>
+        <p class="book-synopsis"> <br> In ancient times many creatures lived along side of the humans.Many looked to become the dominant force on Earth, many were just passing by, but none liked the humans and tried to exterminate them. One man will lead the humans to battle these creatures. Follow our Hero as he faces monsters, gods, and aliens through the most epic story ever told. </p>
+      </div>
+
+      <br>
+
+      <h4>Written by:</h4>
+        <div class="author">
+          <p class="author-name">Jennifer Green</p>
+        </div> 
+
+      <br>
+
+<div class="container">
+  <h2>Reviews:</h2>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Reviewer name</th>
+        <th>Star Rating</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>daniel </td>
+        <td>4</td>
+        <td>jddj</td>
+      </tr>
+      <tr>
+        <td>dygasjg</td>
+        <td>2</td>
+        <td>asdasd</td>
+      </tr>
+      <tr>
+        <td>tory</td>
+        <td>3</td>
+        <td>l;kk</td>
+      </tr>
+      <tr>
+        <td>asdd</td>
+        <td>1</td>
+        <td>asa</td>
+      </tr>
+      <tr>
+        <td>kjhj</td>
+        <td>3</td>
+        <td>fsdf
+</td>
+      </tr>
+      <tr>
+        <td>dasdas</td>
+        <td>5</td>
+        <td>sadas</td>
+      </tr>
+      <tr>
+        <td>hjgkjhgk</td>
+        <td>3</td>
+        <td>ghff</td>
+      </tr>
+      <tr>
+        <td>khgh</td>
+        <td>1</td>
+        <td>gfh</td>
+      </tr>
+      <tr>
+        <td>test 1</td>
+        <td>3</td>
+        <td>ttttt</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<form class="new_review" id="new_review" action="http://localhost:3000/reviews" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="5iVz09+tGRC7akt2ZbhNieTTGiDscZ5O4QKLptDtYIHOw7vyX2YR/fe5hcpQCneM2zs4QHtiWsX7NyNiktnPZg==">
+
+  <label for="review_Name">Name</label><br>
+  <input size="25" type="text" name="review[reviewer]" id="review_reviewer">  <label for="review_Stars">Stars</label> <input step="1" min="1" max="5" type="number" name="review[stars]" id="review_stars"><br><br>
+  <label for="review_Comments">Comments</label><br>
+  <textarea name="review[body]" id="review_body" cols="30" rows="8"></textarea><br>
+  <input type="hidden" value="15" name="review[book_id]" id="review_book_id">
+  <div class="actions">
+    <input type="submit" name="commit" value="Create Review">
+  </div>
+</form>
+        
+        
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./SmallBookSite_files/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./SmallBookSite_files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./SmallBookSite_files/ie10-viewport-bug-workaround.js"></script>
+  
+
+
+
+
+
+
+
+</body></html>

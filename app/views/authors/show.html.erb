@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<% @books.each do |book| %>
+  <strong><%= book.title %></strong>
+  <p><%= book.category %></p>
+<% end %>
+
+
+<p ><%= link_to 'Book Listing', books_path %></p>
